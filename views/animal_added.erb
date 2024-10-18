@@ -1,18 +1,20 @@
 <h1> Hello, <%= @user_name %>! </h1>
 
-<h2> We'll also add new friends for <%= @user_name %>, so they can enjoy their new home! :) </h2>
+<p> We'll also add new friends for <%= @user_name %>, so they can enjoy their new home! :) </p>
 
-<h3> 
-  If picture does not load, <a href="/animal_added?user_choice=<%= @user_choice %>&user_name=<%= @user_name %>"> click here to try again.</a>
-</h3>
+<p>
+  If the picture does not load, <a class="return-link" href="/animal_added?user_choice=<%= @user_choice %>&user_name=<%= @user_name %>"> click here to try again.</a>
+</p>
 
-<img src="<%= @image_url %>" alt="A <%= @user_choice %>">
+<div class="image-div">
+  <img src="<%= @image_url %>" alt="A <%= @user_choice %>">
+</div>
 
 <div>
   <p>
-    Click the paw to add a new friend! 
+    Click the paw to add another new friend! 
   </p>
   <a href="/">
-    <i class="fa-solid fa-paw"></i>
+    <i style="font-size: 80px;" class="fa-solid fa-paw"></i>
   </a>
 </div>

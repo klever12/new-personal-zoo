@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Source+Sans+Pro" rel="stylesheet">
     <style>
       html {
         min-height: 100%;
@@ -15,21 +16,43 @@
         padding-top: 40px;
         padding-bottom: 200px;
         background: linear-gradient(195deg, #ff00c3, #cf1dc1, #a224b6, #7825a3, #53228a, #331d6c, #19154b, #050b2b);
+        font-family: 'Playfair Display', serif;
+        font-size: 48px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 17px;
       }
 
-      .content-div {
+      .main-div {
+        max-width: 640px;
         background: lightskyblue;
         border: 5px black solid;
+        width: 640px;
+        margin: auto;
+        padding: 5px;
       }
 
-      a {
+
+      .return-link {
         color: rgba(255, 255, 255, 1.0);
+      }
+
+      img {
+        max-width: 90%;
+        max-height: 100%;
+      }
+
+      .image-div {
+        text-align: center;
+      }
+
+      i {
+        font-size: 250px;
       }
     </style>
   </head>
 
   <body>
-    <div class="content-div">
+    <div class="main-div">
       <%= yield %>
     </div>
   </body>
