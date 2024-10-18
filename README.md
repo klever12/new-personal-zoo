@@ -1,18 +1,7 @@
-# sinatra-template
+# New Personal Zoo
 
-Use this repository to create new Sinatra apps. 
+This project is an app that simulates a personal zoo of dogs, ducks, and foxes. 
 
-Optionally, to use `ActiveRecord` for database operations, add to the `app.rb`:
+In the homepage, the user is able to choose between a dog, duck, or fox to add to their personal zoo. Also, the user is able to name it.
 
-```ruby
-require "sinatra/activerecord"
-```
-
-And in the `config/environment.rb` file add this code block:
-
-```ruby
-configure do
-  # setup a database connection
-  set(:database, { adapter: "sqlite3", database: "db/development.sqlite3" })
-end
-```
+After, the user will be greeted with a picture of their new animal and its displayed name.
