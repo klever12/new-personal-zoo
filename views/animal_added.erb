@@ -2,6 +2,10 @@
 
 <h2> We'll also add new friends for <%= @user_name %>, so they can enjoy their new home! :) </h2>
 
+<h3> 
+  If picture does not load, <a href="/animal_added?user_choice=<%= @user_choice %>&user_name=<%= @user_name %>"> click here to try again.</a>
+</h3>
+
 <img src="<%= @image_url %>" alt="A <%= @user_choice %>">
 
 <div>

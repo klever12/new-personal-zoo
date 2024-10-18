@@ -5,9 +5,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <style>
+      html {
+        min-height: 100%;
+      }
+
+      body {
+        min-height: 100%;
+        padding-top: 40px;
+        padding-bottom: 200px;
+        background: linear-gradient(195deg, #ff00c3, #cf1dc1, #a224b6, #7825a3, #53228a, #331d6c, #19154b, #050b2b);
+      }
+
+      .content-div {
+        background: lightskyblue;
+        border: 5px black solid;
+      }
+
+      a {
+        color: rgba(255, 255, 255, 1.0);
+      }
+    </style>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="content-div">
+      <%= yield %>
+    </div>
   </body>
 </html>
